@@ -121,6 +121,8 @@
     </Compile>
     <Compile Include="BLL\Book.cs" />
     <Compile Include="BLL\BookStore.cs" />
+    <Compile Include="BLL\Person.cs" />
+    <Compile Include="BLL\MemberSearch.cs" />
     <Compile Include="BLL\DVD.cs" />
     <Compile Include="BLL\DVDStore.cs" />
     <Compile Include="BLL\Item.cs" />

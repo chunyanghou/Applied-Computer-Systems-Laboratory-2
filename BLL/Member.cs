@@ -6,13 +6,13 @@ namespace LibraryManager.BLL
     public class Member
     {
         public String id { get; set; }
-        public String name { get; set; }
+        public Person name { get; set; }
         List<PaymentRequest> paymentRequests;
 
-        public Member(string id, string name)
+        public Member(string id, Person person)
         {
             this.id = id;
-            this.name = name;
+            this.person = person;
 
             paymentRequests = new List<PaymentRequest>();
         }

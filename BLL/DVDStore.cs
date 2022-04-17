@@ -37,12 +37,17 @@ namespace LibraryManager.BLL
             throw new NotImplementedException();
         }
 
-        List<DVD> SearchDVDByDirector(string director)
+        List<DVD> SearchByPerson(Person person)
         {
-            return DVDs.FindAll(i => i.director == director);
+            return DVDs.FindAll(i => i.director == person);
         }
 
-        public void AddNewDVD(String title, int barcode, String director)
+        List<DVD> SearchDVDByDirector(string name)
+        {
+            return DVDs.FindAll(i => i.director.name == name);
+        }
+
+        public void AddNewDVD(String title, int barcode, Person director)
         {
             if (!DVDs.Exists(i => i.barcode == barcode))
             {
